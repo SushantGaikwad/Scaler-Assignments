@@ -1,0 +1,43 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Write CSS Code here */
+#sidebar{
+    position: fixed;
+    left: 0;
+    top: 0;
+    background-color: #34495e;
+    color: white;
+    padding: 15px 30px;
+    height: 100vh;
+    width: 250px;
+    transition: width 0.3s;
+}
+#toggle-button{
+    background-color: #e74c3c;
+    color: white;
+    padding: 10px 20px;
+}
+#toggle-button:hover{
+    background-color: #c0392b;
+}
+#main-content{
+    flex: 1;
+    background-color: #f1c40f;
+    padding: 80px;
+    height: 100vh;
+    margin-left: 250px;
+    transition: margin-left 0.3s;
+}
+
+.collapse{
+    width: 80px !important;
+    transition: width 0.3s;
+}
+
+#main-content.collapsed{
+    margin-left: 80px;
+}
