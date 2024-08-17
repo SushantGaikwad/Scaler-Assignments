@@ -1,0 +1,7 @@
+You need to create a POST route at the path "/movies" using Express.js. This route will be responsible for accepting JSON data to create a new movie in the MongoDB database and responding with the created movie. The database contains a collection of movies, each adhering to a specific schema (which is provided in the code stub). Your task is to implement the POST route so that it connects to the MongoDB database, creates a new movie record with the provided JSON data, and sends the created movie back.
+
+Define a POST route at the path "/movies".
+The POST route should accept JSON data, create a new movie in the MongoDB database, and respond with the created movie.
+
+Set up dependencies by importing necessary libraries (express, mongoose) and ensuring Express is set up to parse JSON bodies. Connect to MongoDB using Mongoose with a specified connection string. Define the Mongoose model by creating a Movie model with a schema detailing required fields: title, description, duration, genre, language, release date, and poster. Implement a POST route at "/movies" that accepts JSON data, creates a new Movie instance, saves it to the database, and returns the created movie document. Use try-catch blocks within your route handling to catch and respond to errors.
+Write your code in src/api.js
